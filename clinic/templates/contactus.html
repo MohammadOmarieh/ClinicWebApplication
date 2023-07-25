@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+          <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+  {% include "navbar.html" %}
+
+<header class="bg-white shadow">
+      <div class="container mx-auto py-6 px-4">
+        <h1 class="text-3xl font-bold text-gray-900">Contact Us</h1>
+      </div>
+    </header>
+ <div class="container mx-auto py-12 px-4">
+
+
+      <div class="flex flex-wrap -mx-4">
+        <div class="w-full lg:w-1/2 px-4">
+          <h2 class="text-2xl font-bold mb-4 text-gray-800">Send Us a Message</h2>
+          <form action="#" method="POST">
+            <div class="mb-4">
+              <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+              <input type="text" id="name" name="name" class="border-2 border-gray-400 p-2 w-full" required>
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+              <input type="email" id="email" name="email" class="border-2 border-gray-400 p-2 w-full" required>
+            </div>
+            <div class="mb-4">
+              <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+              <textarea id="message" name="message" rows="5" class="border-2 border-gray-400 p-2 w-full" required></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue active:bg-blue-800">Send Message</button>
+          </form>
+        </div>
+        <div class="w-full lg:w-1/2 px-4">
+          <h2 class="text-2xl font-bold mb-4 text-gray-800">Visit Us</h2>
+          <p class="mb-4">
+            VitalCare Clinic<br>
+            123 Main Street<br>
+            Suite 200<br>
+            [City], [State/Province] [Zip/Postal Code]<br>
+            [Country]
+          </p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.641844109969!2d-118.40115144842856!3d33.93184298063385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7f61d4c4ad1%3A0x47460ddcd9ca1b10!2s123%20Main%20St%2C%20Los%20Angeles%2C%20CA%2090012%2C%20USA!"/>
+        </div>
+      </div>
+ </div>
+</body>
+</html>

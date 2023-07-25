@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body><!-- component -->
+{% include "navbar.html" %}
+
+<div class="min-h-screen flex flex-col items-center justify-center bg-gray-50 py-10">
+  <div class="flex flex-col bg-white shadow-md px-4 sm:px-6 md:px-8 lg:px-10 py-8 rounded-md w-full max-w-md">
+    <div class="font-medium self-center text-xl sm:text-2xl uppercase text-gray-800">Register Here</div>
+    <div class="mt-10">
+      <form action="/register" method="POST">
+        {% csrf_token %}
+
+   <div class="flex flex-col mb-6">
+          <div class="relative">
+            <div class="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
+              <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+<path d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m-3.5-6.5a3.5 3.5 0 017 0v1a2.5 2.5 0 002.5 2.5H22v2h-3.5a4.5 4.5 0 01-4.5-4.5v-1a3.5 3.5 0 00-3.5-3.5H8v-2h5a3.5 3.5 0 013.5 3.5zm4.5 6.794a8.959 8.959 0 01-4.5 1.207"/>
+              </svg>
+            </div>
+
+            <input id="fullname" required="" type="text" name="fullname" class="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-900 w-full py-2 focus:outline-none focus:border-gray-800" placeholder="Full Name" />
+          </div>
+        </div>
+
+
+        <div class="flex flex-col mb-6">
+          <div class="relative">
+            <div class="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
+              <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+<path d="M12 2C8.134 2 5 5.134 5 9c0 2.121 1.061 4.039 2.686 5.186L7.5 16l1.814-1.814C10.939 13.039 12 11.121 12 9c0-1.654-.492-3.191-1.333-4.481C10.754 2.74 11.352 2 12 2zm4.879 4.293C16.945 7.491 17.5 8.676 17.5 10c0 2.757-2.243 5-5 5s-5-2.243-5-5c0-1.324.555-2.509 1.421-3.707C6.586 7.964 5 11.147 5 15v2h14v-2c0-3.853-1.586-7.036-3.879-8.707zM8.5 9C7.672 9 7 8.328 7 7.5S7.672 6 8.5 6s1.5.672 1.5 1.5S9.328 9 8.5 9zm7 0c-.828 0-1.5-.672-1.5-1.5S14.672 6 15.5 6s1.5.672 1.5 1.5S16.328 9 15.5 9z"/>
+              </svg>
+            </div>
+
+            <input id="username" required="" type="text" name="username" class="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-900 w-full py-2 focus:outline-none focus:border-gray-800" placeholder="username" />
+          </div>
+        </div>
+
+        <div class="flex flex-col mb-6">
+          <div class="relative">
+            <div class="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
+              <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+<path d="M5 7.5l7.5 5L20 7.5" />
+              </svg>
+            </div>
+
+            <input id="email" required="" type="email" name="email" class="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-900 w-full py-2 focus:outline-none focus:border-gray-800" placeholder="Email Address" />
+          </div>
+        </div>
+
+        <div class="flex flex-col mb-6">
+          <div class="relative">
+            <div class="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
+              <span>
+                <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+<path d="M17.33 2.63a2 2 0 013.34 0l1.88 3.66a2 2 0 01-.84 2.68l-3.11 1.79a12.4 12.4 0 01-6.38 0l-3.11-1.79a2 2 0 01-.84-2.68l1.88-3.66a2 2 0 013.34 0l1.11 2.16"/>                </svg>
+              </span>
+            </div>
+
+            <input id="tel" type="tel" required=""  name="phone" class="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-900 w-full py-2 focus:outline-none focus:border-gray-800" placeholder="Phone Number" />
+          </div>
+        </div>
+
+             <div class="flex flex-col mb-6">
+          <div class="relative">
+            <div class="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
+              <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+<path d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m-3.5-6.5a3.5 3.5 0 017 0v1a2.5 2.5 0 002.5 2.5H22v2h-3.5a4.5 4.5 0 01-4.5-4.5v-1a3.5 3.5 0 00-3.5-3.5H8v-2h5a3.5 3.5 0 013.5 3.5zm4.5 6.794a8.959 8.959 0 01-4.5 1.207"/>
+              </svg>
+            </div>
+
+            <input id="address" required="" type="text" name="address" class="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-900 w-full py-2 focus:outline-none focus:border-gray-800" placeholder="Address" />
+          </div>
+        </div>
+
+
+            <div class="flex flex-col mb-6">
+          <div class="relative">
+            <div class="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
+              <span>
+                <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+              </span>
+            </div>
+
+            <input id="dob" required="" type="date" name="dob" class="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-900 w-full py-2 focus:outline-none focus:border-gray-800" placeholder="Date of Birth" />
+          </div>
+        </div>
+
+
+        <div class="flex flex-col mb-6">
+          <div class="relative">
+            <div class="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
+              <span>
+                <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+              </span>
+            </div>
+
+            <input id="password" required="" type="password" name="password" class="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-900 w-full py-2 focus:outline-none focus:border-gray-800" placeholder="Password" />
+          </div>
+        </div>
+
+
+         <div class="flex flex-col mb-6">
+          <div class="relative">
+            <div class="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
+              <span>
+                <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+              </span>
+            </div>
+
+            <input id="confirmpassword" required="" type="password" name="confirmed-password" class="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-900 w-full py-2 focus:outline-none focus:border-gray-800" placeholder="Enter password again" />
+          </div>
+        </div>
+
+    <div class="flex flex-col mb-6">
+  <label for="role" class="text-sm font-medium text-gray-700 mb-2">What is your role?</label>
+  <div class="relative">
+    <select id="role" name="role" class="block appearance-none w-full bg-white border border-gray-900 hover:border-gray-900 px-4 py-2 pr-8 rounded-lg shadow-sm text-sm leading-tight focus:outline-none focus:shadow-outline-blue focus:border-gray-800">
+      <option disabled selected class="text-gray-900">Select Role</option>
+      <option value="patient">Patient</option>
+      <option value="doctor">Doctor</option>
+      <option value="nurse">Nurse</option>
+    </select>
+    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+      <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+        <path d="M9.292 11.292a1 1 0 0 0 1.414 0l3-3a1 1 0 0 0-1.414-1.414L10 8.586l-2.293-2.293a1 1 0 0 0-1.414 1.414l3 3z" />
+      </svg>
+    </div>
+  </div>
+</div>
+
+
+        <div class="flex w-full">
+          <button type="submit" class="flex items-center justify-center focus:outline-none text-white text-sm sm:text-base bg-blue-500 hover:bg-blue-700 rounded py-2 w-full transition duration-150 ease-in">
+            <span class="mr-2 uppercase">Register</span>
+            <span>
+              <svg class="h-6 w-6 text-white " fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="flex justify-center items-center mt-6">
+      <a href="{% url 'login'  %}" class="inline-flex items-center font-bold text-gray-500 hover:text-gray-700 text-xs text-center">
+        <span>
+          <svg class="h-6 w-6 text-gray-900" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+          </svg>
+        </span>
+        <span class="ml-2 text-blue-500" >Try to login</span>
+      </a>
+    </div>
+  </div>
+</div>
+{% include "footer.html" %}
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+<body>
+<section class="relative">
+
+<div class="relative  flex content-center items-center justify-center min-h-screen-75 ">
+           {% load static %}
+ <div class="absolute top-0 w-full h-full bg-center bg-cover" style="
+            background-image: url('{% static 'images/stock.jpg' %}');
+          ">
+          <span id="blackOverlay" class="w-full h-full absolute opacity-0 bg-white"></span>
+        </div>
+        <div class="container relative mx-auto">
+          <div class="items-right flex flex-wrap ">
+            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center ">
+              <div class="pr-12 flex flex-col ">
+<!--                <h1 class="text-gray-700 font-bold text-4xl">-->
+<!--                  Your story starts with VitalCare .-->
+<!--                </h1>-->
+<!--                <p class="mt-4 text-lg text-gray-700">-->
+<!--                 Our team of experienced and skilled healthcare professionals are committed to ensuring that every patient receives personalized attention and the highest quality of care.-->
+<!--                </p>-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px" style="transform: translateZ(0px)">
+          <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+            <polygon class="text-blueGray-200 fill-current" points="2560 0 2560 100 0 100"></polygon>
+          </svg>
+        </div>
+      </div>
+      <section class="pb-10 bg-blueGray-50 -mt-20">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap">
+            <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div class="px-4 py-5 flex-auto">
+                  <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold"> Primary Care</h6>
+                  <p class="mt-2 mb-4 text-blueGray-500">
+                   We offer routine check-ups, physical exams, and preventative care to help our patients maintain their overall health and well-being.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-4/12 px-4 text-center">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div class="px-4 py-5 flex-auto">
+                  <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-lightBlue-400">
+                    <i class="fas fa-retweet"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold"> Women's Health</h6>
+                  <p class="mt-2 mb-4 text-blueGray-500">
+                     We provide gynecological exams, family planning,
+                      and prenatal care to support women's health at all stages of life.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pt-6 w-full md:w-4/12 px-4 text-center">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div class="px-4 py-5 flex-auto">
+                  <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400">
+                    <i class="fas fa-fingerprint"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Diagnostic Testing</h6>
+                  <p class="mt-2 mb-4 text-blueGray-500">
+                      We offer a variety of diagnostic tests and procedures,
+                      including blood work, X-rays, EKGs, and more,
+                      to help diagnose and treat medical conditions.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+</section>
+</body>
+</html>

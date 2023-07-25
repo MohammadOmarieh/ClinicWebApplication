@@ -1,0 +1,31 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Email Template</title>
+        <!-- Include the Tailwind CSS styles -->
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-4">Appointment Details</h2>
+            <p><span class="font-bold">Doctor:</span> {{ doctor_name }}</p>
+            <p><span class="font-bold">Nurse:</span> {{ nurse_name }}</p>
+            <p><span class="font-bold">Date:</span> {{ appointment_date }}</p>
+            <p><span class="font-bold">Time:</span> {{ appointment_time }}</p>
+
+            <h2 class="text-2xl font-bold mt-8">Patient Information</h2>
+            <p><span class="font-bold">Name:</span> {{ patient_name }}</p>
+            <p><span class="font-bold">Email:</span> {{ patient_email }}</p>
+
+            <h2 class="text-2xl font-bold mt-8">Clinic Information</h2>
+            <p><span class="font-bold">Name:</span> {{ clinic_name }}</p>
+            <p><span class="font-bold">Address:</span> {{ clinic_address }}</p>
+
+            <h2 class="text-2xl font-bold mt-8">Appointment Details</h2>
+            <p><span class="font-bold">Duration:</span> {{ appointment_duration }}</p>
+            <p><span class="font-bold">Type:</span> {{ appointment_type }}</p>
+            <p><span class="font-bold">Instructions:</span> {{ special_instructions }}</p>
+        </div>
+    </body>
+    </html>
